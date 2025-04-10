@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Client Website</title>
+  <script src="https://unpkg.com/peerjs@1.4.7/dist/peerjs.min.js"></script>
+  <link rel="stylesheet" href="client.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Join Host Space</h1>
+    <div class="controls">
+      <input type="text" id="peer-id-input" placeholder="Enter Host's Peer ID" class="input-field">
+      <button id="join-space" class="btn">Join Space</button>
+      <button id="toggle-video" class="btn">Toggle Video</button>
+      <button id="end-call" class="btn danger">End Call</button>
+    </div>
+    <div class="main-video-container">
+      <video id="host-screen" autoplay></video>
+    </div>
+    <div id="video-container" class="video-container">
+      <video id="client-video" autoplay muted></video>
+    </div>
+  </div>
+
+  <script src="client.js"></script>
+</body>
+</html>
